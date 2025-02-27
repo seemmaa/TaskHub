@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: white;
+    display: flex;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #242424;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar h2 {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: #333;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sidebar ul li.active {
+    background: #007bff;
+}
+
+.sidebar ul li:hover {
+    background: #007bff;
+}
+
+.logout {
+    background: #ff4d4d;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.datetime {
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: #333;
+    padding: 20px;
+    width: 23%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-card span {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+
+.chart-section {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.chart-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    background: #111;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.bar {
+    width: 20%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    position: relative;
+    transition: height 0.5s ease-in-out;
+}
+
+.bar-projects { background: teal; }
+.bar-students { background: dodgerblue; }
+.bar-tasks { background: goldenrod; }
+.bar-finished { background: purple; }

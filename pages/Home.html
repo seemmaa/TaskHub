@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="../style/Home.css">
+</head>
+<body>
+    <div class="container">
+      
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li class="active">Home</li>
+                <li>Projects</li>
+                <li>Tasks</li>
+                <li>Chat</li>
+            </ul>
+            <button class="logout">Logout</button>
+        </aside>
+
+
+        <main class="main-content">
+            <header>
+                <h1>Welcome to the Task Management System</h1>
+                <span class="datetime" id="datetime" onclick="updateDateTime()"></span>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">Number of Projects <span id="numProjects">0</span></div>
+                <div class="stat-card">Number of Students <span id="numStudents">0</span></div>
+                <div class="stat-card">Number of Tasks <span id="numTasks">0</span></div>
+                <div class="stat-card">Finished Projects <span id="numFinished">0</span></div>
+            </section>
+
+            
+            <section class="chart-section">
+                <h3>Admin Dashboard Overview</h3>
+                <div class="chart">
+                    <div class="bar bar-projects" id="barProjects">Projects</div>
+                    <div class="bar bar-students" id="barStudents">Students</div>
+                    <div class="bar bar-tasks" id="barTasks">Tasks</div>
+                    <div class="bar bar-finished" id="barFinished">Finished</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
