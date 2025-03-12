@@ -1,0 +1,81 @@
+/* خلفية الصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* حاوية تسجيل الدخول */
+.login-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+/* عنوان تسجيل الدخول */
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* تسميات الإدخال */
+label {
+    display: block;
+    text-align: left;
+    color: #ddd;
+    font-size: 14px;
+    margin: 10px 0 5px;
+}
+
+/* الحقول النصية */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* زر تسجيل الدخول */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* خيار البقاء مسجلاً */
+.stay-signed-in {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.stay-signed-in input {
+    margin-right: 5px;
+}
+
+.stay-signed-in label {
+    color: #ddd;
+    font-size: 14px;
+}
